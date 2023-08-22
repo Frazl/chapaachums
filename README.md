@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+# Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Chapaa Chums is a Palia helper site. Palia is an online "cozy" MMO inspired by Animal Crossing and Stardew Valley. It is developed by Singularity 6 and therefore many of the assets and content the site distributes is not owned by me or any contributor. **This tool / site is fan-made and not affiliated in any way with Palia or Singularity 6.**
 
-## Available Scripts
+I (Fraz / @Frazl) am open to contributions to the website, I'm interested in bug fixes / new features / suggestions (via issues tab on github or discord). I will try record any suggestions or issues on discord and keep that as the single source of truth to help non technical people contribute ideas 😊
 
-In the project directory, you can run:
+## Links
 
-### `npm start`
+- [Join Chapaa Chums Discord](https://discord.gg/3dj8nQhaud)
+- [View the site - ChapaaChums.com](https://chapaachums.coms)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Technical
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- This site is built using the [Create React App](https://github.com/facebook/create-react-app) template with typescript. 
+- I do not plan on adding Redux to this site 
+- It makes use of the react-router for basic "page" routing
+- It makes use of google sheets for persistence. I do not plan on changing this.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Dev Setup
 
-### `npm run build`
+- clone the repo
+- `npm install`
+- `npm start`
+- A webpack dev server running on port 3000 will start with hot reloading, see the create-react-app bootstrap template for more info.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Issues? Contact Fraz on discord.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Building the app
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- clone the repo
+- `npm install`
+- `npm run build`
+- copy content of build directory to some static site hosting :)
