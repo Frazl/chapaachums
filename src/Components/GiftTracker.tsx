@@ -2,22 +2,12 @@ import * as React from 'react';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
-import AppBar from '@mui/material/AppBar'
-import Toolbar from '@mui/material/Toolbar'
-import Diversity1Icon from '@mui/icons-material/Diversity1';
-import { Button, ButtonBase, Checkbox, Table, TableBody, TableCell, TableHead, TableRow, TextField, FormControlLabel, Tooltip, Switch } from '@mui/material';
-import AgricultureIcon from '@mui/icons-material/Agriculture';
-import DashboardIcon from '@mui/icons-material/Dashboard';
+import { ButtonBase, Checkbox, Table, TableBody, TableCell, TableHead, TableRow, TextField, FormControlLabel } from '@mui/material';
 import NotListedLocationIcon from '@mui/icons-material/NotListedLocation';
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
 import { PaliaItem } from "../Data/items"
 import { ALL_NPCS, NPC, NpcID } from '../Data/npcs';
-import { DailyGiftResetTime, isBefore4AMLastMonday, isPast4AM, PaliaClock, WeeklyGiftResetTime } from './TimeTrackers';
+import { isBefore4AMLastMonday, isPast4AM } from './TimeTrackers';
 
 type TrackedGifts = Record<NpcID, TrackedNPC>
 
