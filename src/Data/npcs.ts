@@ -1,6 +1,4 @@
-export interface PaliaItem {
-    name: string
-}
+import { PaliaItem } from "./items"
 
 export const NpcIDs = ["Ashura",
     "Auni",

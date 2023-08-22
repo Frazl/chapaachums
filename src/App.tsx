@@ -6,7 +6,7 @@ import Link from '@mui/material/Link';
 import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
 import Diversity1Icon from '@mui/icons-material/Diversity1';
-import { Button, ButtonBase, Checkbox, Table, TableBody, TableCell, TableHead, TableRow, TextField, FormControlLabel, Tooltip, Switch, BottomNavigation, BottomNavigationAction } from '@mui/material';
+import { Button, ButtonBase, Checkbox, Table, TableBody, TableCell, TableHead, TableRow, TextField, FormControlLabel, Tooltip, Switch } from '@mui/material';
 import AgricultureIcon from '@mui/icons-material/Agriculture';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
@@ -18,7 +18,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import { ALL_NPCS, NPC, NpcID, PaliaItem } from './Data/npcs';
+import { PaliaItem } from "./Data/items"
+import { ALL_NPCS, NPC, NpcID } from './Data/npcs';
 
 
 function getPaliaTime() {
@@ -183,10 +184,6 @@ function HeaderMenu() {
 }
 
 type LastGifted = Record<string, Date>
-
-interface PaliaNpcGiftTrackerProps {
-  lastGiftedNpc: LastGifted
-}
 
 
 // This is the time palia resets
