@@ -7,7 +7,7 @@ I (Fraz / @Frazl) am open to contributions to the website, I'm interested in bug
 ## Links
 
 - [Join Chapaa Chums Discord](https://discord.gg/3dj8nQhaud)
-- [View the site - ChapaaChums.com](https://chapaachums.coms)
+- [View the site - ChapaaChums.com](https://chapaachums.com)
 
 # Technical
 
