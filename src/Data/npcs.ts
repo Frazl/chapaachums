@@ -1,6 +1,7 @@
 import { PaliaItem } from "./items"
 
-export const NpcIDs = ["Ashura",
+export const NpcIDs = [
+    "Ashura",
     "Auni",
     "Badruu",
     "Caleri",
@@ -22,7 +23,9 @@ export const NpcIDs = ["Ashura",
     "Sifuu",
     "Tamala",
     "Tish",
-    "Zeki"] as const
+    "Zeki",
+    "Tau"
+] as const
 
 export type NpcID = typeof NpcIDs[number]
 

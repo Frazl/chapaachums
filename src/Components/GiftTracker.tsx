@@ -63,7 +63,8 @@ function getDefaultNpcTrackedState() {
 export function PaliaNpcGiftTracker() {
   const [npcs, setNpcs] = React.useState([...ALL_NPCS])
   const [fetchedNpcLikes, setFetchWantedNpcLikes] = React.useState(false)
-  const [trackedGifts, setTrackedGifts]: [TrackedGifts, Function] = React.useState(getDefaultNpcTrackedState());
+  const DEFAULT_NPC_TRACKED_GIFT_STATE = getDefaultNpcTrackedState()
+  const [trackedGifts, setTrackedGifts]: [TrackedGifts, Function] = React.useState(DEFAULT_NPC_TRACKED_GIFT_STATE);
   removeGiftsPastDates(trackedGifts)
   const [fetchedLocalStroage, setFetchedLocalStorage] = React.useState(false)
 
@@ -76,7 +77,10 @@ export function PaliaNpcGiftTracker() {
     if (maybeGifts) {
       let trackedGiftsParsed = JSON.parse(maybeGifts)
       npcs.forEach((npc) => {
-        if (trackedGiftsParsed[npc.name].daily !== undefined) {
+        if (trackedGiftsParsed[npc.name] === undefined) {
+          trackedGiftsParsed[npc.name] = DEFAULT_NPC_TRACKED_GIFT_STATE[npc.name]
+        }
+        if (trackedGiftsParsed[npc.name] && trackedGiftsParsed[npc.name].daily !== undefined) {
           trackedGiftsParsed[npc.name].daily = new Date(trackedGiftsParsed[npc.name].daily)
         }
         Object.keys(trackedGiftsParsed[npc.name].items).forEach((key) => {
