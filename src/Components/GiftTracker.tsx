@@ -133,8 +133,9 @@ export function PaliaNpcGiftTracker() {
         const tableRows = results.table.rows
         for (let i = 1; i < tableRows.length; i++) {
           let npc = newNpcs.find((npc) => npc.name.toLowerCase() === tableRows[i]['c'][0]['v'].toLowerCase()) as NPC
-          const likes: PaliaItem[] = tableRows[i]['c'][1]['v'].split(",").map((s: string) => { return ({ name: s.trim() }) })
-          const loves: PaliaItem[] = tableRows[i]['c'][3]['v'].split(",").map((s: string) => { return ({ name: s.trim() }) })
+          console.log(tableRows[i]['c'][2]['v'])
+          const likes: PaliaItem[] = [{name: tableRows[i]['c'][1]['v']}, {name: tableRows[i]['c'][2]['v']}]
+          const loves: PaliaItem[] = [{name: tableRows[i]['c'][3]['v']}, {name: tableRows[i]['c'][4]['v']}]
           npc.likes = npc.likes.concat(likes)
           npc.loves = npc.loves.concat(loves)
         }
