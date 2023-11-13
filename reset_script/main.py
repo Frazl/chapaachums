@@ -15,4 +15,4 @@ for cell in cell_list:
     cell.value = value_to_set
 worksheet.update_cells(cell_list)
 
-print(f"Range {range_to_set} in the Google Sheet has been set to '{value_to_set}'.")
+print("Range", range_to_set, "in the Google Sheet has been set to '"+value_to_set+"'.")
