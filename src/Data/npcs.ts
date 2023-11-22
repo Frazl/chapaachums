@@ -24,7 +24,8 @@ export const NpcIDs = [
     "Tamala",
     "Tish",
     "Zeki",
-    "Tau"
+    "Tau",
+    "Subira"
 ] as const
 
 export type NpcID = typeof NpcIDs[number]
