@@ -2,7 +2,7 @@ import gspread
 from google.oauth2.service_account import Credentials
 
 credentials_file_path = './credentials.json'
-range_to_set = 'B2:E25'
+range_to_set = 'B2:E26'
 value_to_set = '?'
 sheet_id = '1_ESG0vd1V_rNmS7EyLEDp5DOtTXIxPskzqxQbPlPa2g'
 
